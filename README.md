@@ -1,7 +1,7 @@
 # AWS Tasks
 
 This document outlines six AWS tasks with explanations of concepts and resources used.
-## Task 1: Establish connectivity to private EC2 instance from Public EC2 (Bastion Host)
+# Task 1: Establish connectivity to private EC2 instance from Public EC2 (Bastion Host)
 
 One of AWS's primary services, Amazon EC2 (Elastic Compute Cloud), enables you to operate virtual servers in the cloud. Consider it a remote computer that you can scale, start, stop, and configure as you see fit. For security reasons, not every EC2 instance in a real-world deployment is directly connected to the internet. The idea of a Bastion Host, a public EC2 instance that serves as a secure entry point to other private EC2 instances within a VPC (Virtual Private Cloud), enters the picture here.
 
@@ -21,9 +21,7 @@ We put the Bastion Host in a public subnet that is linked to an Internet Gateway
 ![WhatsApp Image 2025-05-27 at 03 25 16_f63c913f](https://github.com/user-attachments/assets/847b9711-a609-4c39-b401-55705165b110)
 
 
-
-- Task 2: Establish Auto Scaling using ASG
-##  Task 2: Establish Auto Scaling using ASG
+#  Task 2: Establish Auto Scaling using ASG
 
 Running virtual machines in the cloud is possible with Amazon EC2 (Elastic Compute Cloud), but manually maintaining them can be ineffective and time-consuming, particularly when handling workload fluctuations. This is where *Auto Scaling* enters the picture, enabling your infrastructure to adapt to demand variations on its own. 
 
@@ -38,7 +36,7 @@ Auto Scaling Groups can be configured to scale in and out in response to real-ti
 #### 2) Asg Creation 
 ![WhatsApp Image 2025-05-27 at 01 41 54_146de749](https://github.com/user-attachments/assets/c3987b64-9d97-4f7d-a35b-3838df968b75)
 
-  ##  Task 3: Application Load Balancer-Based Path-Based Routing
+  # Task 3: Application Load Balancer-Based Path-Based Routing
 
 The *Application Load Balancer (ALB)* is one of the strong traffic management tools offered by *Amazon Web Services (AWS). Using request attributes like URL path, host headers, or query strings, ALB is made to route HTTP and HTTPS traffic to your targets. One of the most popular methods is **Path-Based Routing*, which routes traffic to various target groups according to the URL path in incoming requests.
 
@@ -64,7 +62,7 @@ app2
 ![WhatsApp Image 2025-05-30 at 12 51 52_29c08064](https://github.com/user-attachments/assets/d2173025-fab7-4fc8-ba0b-c7390e45a3e6)
 
 - Task 4: Host Domain using Route 53 and establish path-based & host header-based routing
-  ##  Task 5: Establish a Unique IAM Policy
+  # Task 5: Establish a Unique IAM Policy
 
 AWS permission management is essential to environment security, and fine-grained access control for AWS resources is made possible by *IAM (Identity and Access Management). In order to secure and restrict EC2 actions, we create a custom **IAM Policy* in this task.
 
@@ -83,7 +81,7 @@ You can protect EC2 resources from unintentional termination while preserving th
 
   
 
-## Task 6: VPC Examining Two AWS Accounts
+# Task 6: VPC Examining Two AWS Accounts
 
 For improved isolation, security, and management, resources are frequently dispersed across several AWS accounts in real-world cloud architectures. AWS has a powerful feature called *VPC Peering* that allows two *Virtual Private Clouds (VPCs)* to communicate with each other, even if they are part of different AWS accounts.
 
