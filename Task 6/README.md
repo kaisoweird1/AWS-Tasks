@@ -1,4 +1,4 @@
-# Task 6: VPC Examining Two AWS Accounts
+# Task 6: VPC Peering Using Two AWS Accounts
 
 For improved isolation, security, and management, resources are frequently dispersed across several AWS accounts in real-world cloud architectures. AWS has a powerful feature called *VPC Peering* that allows two *Virtual Private Clouds (VPCs)* to communicate with each other, even if they are part of different AWS accounts.
 
